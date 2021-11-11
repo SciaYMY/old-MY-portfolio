@@ -30,13 +30,18 @@ i{font-size: var(--font-large);}
 .section .title{text-align: center; margin-bottom: 56px;}
 /* PROFILE */
 .section1{background: var(--white-color);}
+.section1 .container{position: relative;}
 .section1 .title h2{border-color: var(--gray-color);}
 .section1 .baseinfo{display: flex; flex-wrap: wrap;}
-.section1 .baseinfo>ul{flex: 0 1 255px; overflow: hidden;}
+.section1 .baseinfo>ul{overflow: hidden; width: 255px; height: 255px; display: flex; position: relative;}
+.section1 .baseinfo>ul li{position: absolute; left: 100%;}
+.section1 .baseinfo>ul li:first-child{margin-top: 59px; left: 0;}
 .section1 .text-info{font-size: 30px; margin-left: 50px; flex: 0 1 31%;}
 .section1 .text-info span strong{font-size: 36px; margin-right: 18px;}
 .section1 .text-info p{margin: calc(var(--font-large)/3) 0; background: #12104E; color: var(--white-color); padding: 5px 10px; display: inline-block;}
-.section1 .information{display: flex; flex-wrap: wrap; justify-content: flex-end;}
+.section1 .information{display: flex; flex-wrap: wrap; justify-content: end; margin-right: 55px;}
+.section1 .information{position: absolute; right: 0; bottom: 46px; flex-direction: row-reverse;}
+.section1 .information .tel{flex: 0 1 100%; justify-content: end; margin-right: 70px;}
 .section1 .information>div{display: flex; margin: 82px 0 0 145px;}
 .section1 .information>div i{margin-right: 30px;}
 .section1 .information>div strong{font-size: var(--font-small); margin-bottom: 6px;}
